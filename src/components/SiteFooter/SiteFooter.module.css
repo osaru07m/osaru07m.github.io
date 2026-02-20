@@ -1,0 +1,32 @@
+.siteFooter {
+    padding: 1rem 2rem;
+    background-color: var(--color-section-bg);
+}
+
+.siteFooterInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+}
+
+.siteFooterBrand {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.siteFooterLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .75em;
+}
+
+.siteFooterLinks li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}

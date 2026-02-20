@@ -1,0 +1,44 @@
+.siteHeader {
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-section-bg);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    border-radius: 0 0 .5rem .5rem;
+    z-index: 999;
+}
+
+.siteHeaderInner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+}
+
+.siteHeaderBrand {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+.siteHeaderLinks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .75em;
+}
+
+.siteHeaderLinks:first-of-type {
+    flex-grow: 1;
+}
+
+.siteHeaderLinks li a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
