@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     template: "%s | " + SiteConfig.siteMeta.title,
   },
   description: SiteConfig.siteMeta.description,
+  icons: "/icon.png",
 };
 
 export const viewport: Viewport = {

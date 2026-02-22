@@ -1,0 +1,86 @@
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.items > .item {
+    border-bottom: 1px dashed var(--color-secondary);
+}
+.items>.item:last-of-type {
+    border-bottom: 0;
+}
+
+.item {
+    padding: .75rem .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: .5rem;
+}
+
+.item * {
+    margin: 0;
+}
+
+.thumbnail {
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.title {
+    font-size: 1.25rem;
+    padding: 0;
+    background-color: var(--color-section-bg);
+}
+
+.description {
+    word-wrap: break-word;
+}
+
+.clientName > a {
+    color: var(--color-text);
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    transition: color .5s ease-in-out;
+
+    &:hover {
+        color: var(--color-secondary);
+    }
+}
+
+.comment {
+    font-style: italic;
+}
+
+.itemFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: .25rem;
+}
+
+.itemFooter > * {
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25rem;
+    padding: 0;
+}
+.skill {
+    display: block;
+    padding: .25rem .5rem;
+    border-radius: .375rem;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-section-bg);
+    color: var(--color-secondary);
+    cursor: default;
+}
+
+.date {
+    text-align: end;
+}

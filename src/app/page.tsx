@@ -4,9 +4,10 @@ import styles from "./page.module.css";
 import FeedCardSkeletons from "@/components/Articles/ArticleSkeltonCards";
 import Image from "next/image";
 import { SiteConfig } from "@/site.config";
-import WorksList from "@/components/Works/WorksList";
+import WorkItems from "@/components/Works/WorkItems";
 
 export default function Home() {
+    const worksLimit = 6;
     const feedsLimit = 6;
 
     return (
@@ -20,19 +21,23 @@ export default function Home() {
                     className={styles.keyVisual_avatar}
                 />
                 <h1 className={styles.keyVisual_title}>{SiteConfig.siteMeta.title}</h1>
-                <p className={styles.keyVisual_introduce}>I'm Osaru, an engineer based in Japan.<br />I develop web applications independently.<br />Currently, I'm building a task and project management system.</p>
+                <div className={styles.keyVisual_introduce}>
+                    <p>I'm Osaru, an engineer based in Japan.</p>
+                    <p>I develop web applications independently.</p>
+                    <p>Currently, I'm building a task and project management system.</p>
+                </div>
             </section>
 
             <section>
-                <h2>Works</h2>
-                <WorksList limit={6} />
+                <h2>Recent Works</h2>
+                <WorkItems limit={worksLimit} />
             </section>
 
             <section>
                 <h2>Articles</h2>
                 <Suspense
                     fallback={
-                        <FeedCardSkeletons limit={feedsLimit}/>
+                        <FeedCardSkeletons limit={feedsLimit} />
                     }
                 >
                     <FeedCards limit={feedsLimit} />

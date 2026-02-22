@@ -30,3 +30,9 @@
 .keyVisual_introduce {
     font-size: 1.125rem;
 }
+.keyVisual_introduce > p {
+    margin: 0 0 .25rem 0;
+}
+.keyVisual_introduce>p:last-of-type {
+    margin: 0;
+}
