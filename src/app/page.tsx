@@ -34,7 +34,7 @@ export default function Home() {
             </section>
 
             <section>
-                <h2>Articles</h2>
+                <h2>Recent Articles</h2>
                 <Suspense
                     fallback={
                         <FeedCardSkeletons limit={feedsLimit} />
