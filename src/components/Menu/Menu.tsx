@@ -35,7 +35,7 @@ export default function Menu() {
                 onClick={toggleMenu}
                 className={styles.btn}
                 aria-expanded={isOpen}
-            >Menu</button>
+            >{ isOpen ? "Close" : "Menu" }</button>
         </div>
     );
 }

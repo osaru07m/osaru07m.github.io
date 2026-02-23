@@ -48,6 +48,11 @@
             visibility .35s linear;
     z-index: 940;
 
+    @media screen and (max-width: 767px) {
+        width: 50dvw;
+        width: 50vw;
+    }
+
     &.open {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -67,6 +72,11 @@
     color: var(--color-section-bg);
     font-size: 1.25rem;
     font-weight: bold;
+    text-align: start;
+
+    @media screen and (max-width: 767px) {
+        font-size: 1rem;
+    }
 }
 .menuHeader__icon {
     object-fit: cover;
