@@ -10,11 +10,6 @@ export default function SiteHeader() {
                 <Link href="/" className={styles.siteHeaderBrand}>Osaru</Link>
 
                 <ul className={styles.siteHeaderLinks}>
-                    <li><Link href="/works">Works</Link></li>
-                    <li><Link href="/articles">Articles</Link></li>
-                </ul>
-
-                <ul className={styles.siteHeaderLinks}>
                     <li>
                         <Link href="https://github.com/osaru07m/" target="_blank">
                             <Image

@@ -1,0 +1,98 @@
+.menuWrapper {
+    width: 100dvw;
+    width: 100vw;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.btn {
+    border: 1px solid var(--color-primary);
+    border-radius: .375rem;
+    background-color: var(--color-section-bg);
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    font-size: 1.25rem;
+    padding: .5rem 1.75rem;
+    color: var(--color-primary);
+    transition: border-color .25s linear, color .25s linear;
+    z-index: 950;
+
+    &[aria-expanded="true"] {
+        border-color: var(--color-accent);
+        color: var(--color-accent);
+    }
+}
+
+.menu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-section-bg);
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+    width: 25dvw;
+    width: 25vw;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    transform-origin: bottom;
+    visibility: hidden;
+    transition:
+            transform .35s cubic-bezier(.22, 1, .36, 1),
+            opacity .25s linear,
+            visibility .35s linear;
+    z-index: 940;
+
+    &.open {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        visibility: visible;
+    }
+}
+
+.menuHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    padding: .25rem 1rem;
+    background-color: var(--color-primary);
+}
+.menuHeader > * {
+    color: var(--color-section-bg);
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.menuHeader__icon {
+    object-fit: cover;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    margin: 0;
+    padding: 1rem;
+}
+.items li {
+    display: block;
+    text-align: start;
+}
+.items li a {
+    display: block;
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: .25rem;
+    border-bottom: 1px solid var(--color-primary);
+
+    &:hover {
+        color: var(--color-accent);
+        border-color: var(--color-accent);
+    }
+}
