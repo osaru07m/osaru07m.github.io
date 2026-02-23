@@ -6,6 +6,7 @@ import './globals.css'
 
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import SiteFooter from '../components/SiteFooter/SiteFooter';
+import Menu from '@/components/Menu/Menu';
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +38,8 @@ export default function RootLayout({
         <SiteHeader />
 
         {children}
+
+        <Menu />
 
         <SiteFooter />
 
