@@ -21,10 +21,9 @@ export default async function ArticleCards({ limit }: Props) {
             {articles.map((article, i) => (
                 <ArticleCard key={i} article={article} />
             ))}
-
             {
                 articlesCount > limit &&
-                <Link href="/articles" className={styles.btn_seeMore}>See more →</Link>
+                <span className={styles.moreText}>more...</span>
             }
         </div>
     )

@@ -9,7 +9,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Courier New', Courier, monospace;
     user-select: none;
 }
 
@@ -31,6 +30,7 @@
     font-size: 1.125rem;
 }
 .keyVisual_introduce > p {
+    font-family: 'Courier New', Courier, monospace;
     margin: 0 0 .25rem 0;
 }
 .keyVisual_introduce>p:last-of-type {

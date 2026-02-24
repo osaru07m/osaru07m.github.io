@@ -15,14 +15,14 @@ export const works: Work[] = [
     {
         title: "Shift Management Application Development",
         description: "Commissioned by an acquaintance's company, I developed this application. We actively incorporated feedback from employees and managers, resulting in high client satisfaction.",
-        skills: ["PHP", "Laravel", "jQuery", "Bootstrap CSS", "SCSS", "MySQL"],
+        skills: ["PHP", "Laravel", "jQuery", "Ajax", "Bootstrap CSS", "SCSS", "MySQL"],
         comment: "This project's deliverable is not publicly disclosed due to client circumstances.",
         date: "2019-08-25"
     },
     {
         title: "Major Website Renovation",
         description: "Commissioned by an acquaintance's company, I undertook a major renovation. At the client's request, I redesigned the site to incorporate trendy UI designs and introduced features such as a news section.",
-        skills: ["PHP", "jQuery", "SCSS", "CSS", "MySQL"],
+        skills: ["PHP", "jQuery", "Ajax", "SCSS", "CSS", "MySQL"],
         comment: "This project's deliverable is not publicly disclosed due to client circumstances.",
         date: "2021-01-14"
     },
@@ -38,5 +38,11 @@ export const works: Work[] = [
         clientName: "凪コミュ！",
         skills: ["PHP", "Laravel", "jQuery", "Bootstrap CSS", "MySQL"],
         date: "2025-12-03"
+    },
+    {
+        title: "Internal Bulletin Board Web System Development",
+        description: "I developed an internal bulletin board web system. I focused on UI/UX and was able to create a user-friendly system, drawing inspiration from recent social media platforms.",
+        skills: ["PHP", "Laravel", "jQuery", "Ajax", "Bootstrap CSS", "MySQL"],
+        date: "2025-09-01"
     }
 ];

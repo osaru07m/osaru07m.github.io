@@ -2,12 +2,21 @@ import Link from "next/link"
 import Image from "next/image"
 
 import styles from "./SiteHeader.module.css"
+import { SiteConfig } from "@/site.config"
 
 export default function SiteHeader() {
     return (
         <header className={styles.siteHeader}>
             <nav className={styles.siteHeaderInner}>
-                <Link href="/" className={styles.siteHeaderBrand}>Osaru</Link>
+                <Link href="/" className={styles.siteHeaderBrand}>
+                    <Image
+                        src="/icon.png"
+                        alt={SiteConfig.siteMeta.title}
+                        width={32}
+                        height={32}
+                    />
+                    <span>Osaru</span>
+                </Link>
 
                 <ul className={styles.siteHeaderLinks}>
                     <li>

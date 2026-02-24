@@ -26,8 +26,8 @@ export default function Menu() {
                 </div>
 
                 <ul className={styles.items}>
-                    <li><Link href="/works">Works</Link></li>
-                    <li><Link href="/articles">Articles</Link></li>
+                    <li><Link href="">Works (Coming soon.)</Link></li>
+                    <li><Link href="">Articles (Coming soon.)</Link></li>
                 </ul>
             </div>
 
