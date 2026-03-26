@@ -1,0 +1,20 @@
+@use '@/app/variables.module.scss' as var;
+
+.header__brand {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .25rem;
+    color: var.$primary;
+    font-weight: bold;
+    font-size: calc(var.$font-size * 1.5);
+    text-decoration: none;
+}
+
+.header__logo {
+    position: initial !important;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+
+    display: block;
+}

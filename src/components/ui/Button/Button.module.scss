@@ -1,0 +1,70 @@
+@use '@/app/variables.module.scss' as var;
+
+.btn {
+    width: fit-content;
+    padding: .125rem 1rem;
+    border-radius: var.$border-radius;
+    background-color: var.$body-bg;
+    border: 1px solid var.$primary;
+    color: var.$primary;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    margin: .5rem 0;
+
+    transition: border .25s ease-in-out;
+
+    .btn__text {
+        color: var.$primary;
+        flex-shrink: 0;
+        font-size: calc(var.$font-size * 1.125);
+        transition: color .25s ease-in-out;
+    }
+
+    .btn__icon {
+        fill: var.$primary;
+        position: initial !important;
+        width: calc(var.$font-size * 1.125) !important;
+        height: calc(var.$font-size * 1.125) !important;
+
+        transition: transform .25s ease-in-out, fill .25s ease-in-out;
+    }
+
+    &:hover {
+        border: 1px solid var.$accent;
+
+        .btn__text {
+            color: var.$accent;
+        }
+
+        .btn__icon {
+            fill: var.$accent;
+            transform: translateX(5px);
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .btn__icon {
+            animation: moveIconAnimation 1.5s linear infinite;
+        }
+    }
+}
+
+@keyframes moveIconAnimation {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+}

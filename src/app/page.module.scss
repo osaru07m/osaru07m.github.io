@@ -1,0 +1,56 @@
+@use '@/app/variables.module.scss' as var;
+
+.keyVisual {
+    width: 65dvw;
+    width: 65vw;
+    margin: 2rem auto;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        width: 85dvw;
+        width: 85vw;
+    }
+}
+
+.keyVisual__avatar {
+    position: initial !important;
+
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    max-width: 25dvw;
+    max-width: 25vw;
+
+    @media screen and (max-width: 767px) {
+        max-width: 45dvw;
+        max-width: 45vw;
+    }
+}
+
+.keyVisual__title {
+    font-size: calc(var.$font-size * 2);
+    margin: .5rem 0;
+}
+
+.keyVisual__introduce {
+    font-size: calc(var.$font-size * 1.25);
+    text-align: start;
+
+    p {
+        margin: .25rem 0;
+    }
+}
+
+.works__footer {
+    a {
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+}
+
+.articles__footer {
+    a {
+        margin-top: 1rem;
+        margin-left: auto;
+    }
+}

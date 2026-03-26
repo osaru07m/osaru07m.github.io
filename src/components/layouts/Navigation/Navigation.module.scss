@@ -1,0 +1,192 @@
+@use '@/app/variables.module.scss' as var;
+
+.navigation {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.navigation__toggleBtn {
+    margin: auto;
+    background-color: rgba($color: var.$primary, $alpha: .8);
+    color: #ffffff;
+    border: 0;
+    border-radius: var.$border-radius;
+    padding: .25rem 1rem;
+    font-size: calc(var.$font-size * 1.25);
+    box-shadow: 0 .125rem .25rem rgba($color: var.$primary, $alpha: .75);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .25rem;
+    transform: scale(1);
+    transition:
+        background-color .25s ease-in-out,
+        transform .25s ease-in-out;
+
+    &:hover {
+        background-color: var.$primary;
+        transform: scale(.975);
+    }
+
+    &.is_open {
+        background-color: var.$accent;
+        transform: scale(.975);
+
+        .navigation__toggleBtn__icon_bars {
+            width: 20px;
+            height: 20px;
+            transform: scale(0);
+        }
+
+        .navigation__toggleBtn__icon_x {
+            width: 20px;
+            height: 20px;
+            transform: scale(1);
+        }
+    }
+
+    .navigation__toggleBtn__icons {
+        position: relative;
+        width: 20px;
+        height: 20px;
+    }
+
+    .navigation__toggleBtn__icon_bars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        transform: scale(1);
+        transition: transform .25s ease-in-out;
+    }
+
+    .navigation__toggleBtn__icon_x {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        transform: scale(0);
+        transition: transform .25s ease-in-out;
+    }
+}
+
+.navigation__body {
+    position: absolute;
+    bottom: calc(100% + 1rem);
+    width: min(90vw, 320px);
+    height: max-content;
+    background-color: var.$body-bg;
+    border-radius: var.$border-radius;
+    box-shadow: 0 .125rem .25rem rgba($color: #000000, $alpha: .5);
+    transform: scale(0.95);
+    overflow: hidden;
+    transform-origin: bottom center;
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+
+    &.is_open {
+        transform: scale(1);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .navigation__header {
+        background-color: var.$primary;
+        color: var.$section-bg;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .25rem;
+        padding: .5rem;
+        box-shadow: 0 .125rem .25rem rgba($color: var.$primary, $alpha: .75);
+
+        span {
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+    }
+
+    .navigation__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 0 .25rem;
+
+            a {
+                display: block;
+                width: 100%;
+                padding: .5rem .75rem;
+                text-decoration: none;
+                color: var.$primary;
+                border-left: 0 solid var.$secondary;
+                transition:
+                    color .25s ease-in-out,
+                    border-width .25s ease-in-out,
+                    padding-left .25s ease-in-out;
+
+                &:hover {
+                    border-width: .25rem;
+                    color: var.$secondary;
+                    padding-left: 1rem;
+                }
+
+                &.active {
+                    border-width: .25rem;
+                    border-color: var.$accent;
+                    color: var.$accent;
+                }
+            }
+        }
+    }
+}
+
+@keyframes showNavigationBody {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    25% {
+        width: 5dvw;
+        width: 5vw;
+        height: 25%;
+    }
+
+    50% {
+        width: 10dvw;
+        width: 10vw;
+        height: 50%;
+    }
+
+    100% {
+        width: 25dvw;
+        width: 25vw;
+        height: 100%;
+    }
+}
