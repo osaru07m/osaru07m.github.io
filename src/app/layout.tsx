@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: Config.siteMeta.title,
     description: Config.siteMeta.description,
     creator: `@${Config.profiles.x_twitter.username}`,
