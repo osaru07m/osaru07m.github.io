@@ -14,7 +14,7 @@ export default async function Home() {
             <div id="keyVisual" className={styles.keyVisual}>
                 <Image
                     src="/avatar.png"
-                    alt=""
+                    alt="Osaru avatar"
                     fill
                     className={styles.keyVisual__avatar}
                 />

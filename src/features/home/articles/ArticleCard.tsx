@@ -14,6 +14,8 @@ export default function ArticleCard({ article }: Props) {
         <article>
             <Link
                 href={article.link}
+                hrefLang="ja"
+                rel="external"
                 className={styles.article__card}
             >
                 <div className={styles.article__card__header}>

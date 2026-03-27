@@ -13,7 +13,11 @@ export default function SiteFooter() {
 
             <div id="profiles">
                 {Object.entries(profiles).map(([key, profile]) => (
-                    <Link key={key} href={profile.url}>
+                    <Link
+                        key={key}
+                        href={profile.url}
+                        rel="external author"
+                    >
                         <span className="visually-hidden">{profile.title} ({profile.username})</span>
                         <Image
                             src={`${key}.svg`}
