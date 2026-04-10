@@ -20,7 +20,7 @@ export default function SiteFooter() {
                     >
                         <span className="visually-hidden">{profile.title} ({profile.username})</span>
                         <Image
-                            src={`${key}.svg`}
+                            src={`/${key}.svg`}
                             alt={profile.title}
                             width={24}
                             height={24}
