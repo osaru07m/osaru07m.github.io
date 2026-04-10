@@ -24,8 +24,8 @@ export default function Navigation() {
                 </div>
                 <ul className={styles.navigation__items}>
                     <li><a href="/">Home</a></li>
-                    <li><a>Works (Coming soon)</a></li>
-                    <li><a>Articles (Coming soon)</a></li>
+                    <li><a href="/works/">Works</a></li>
+                    <li><a href="/articles/">Articles</a></li>
                 </ul>
             </nav>
 

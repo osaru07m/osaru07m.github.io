@@ -1,0 +1,67 @@
+@use '@/app/variables.module.scss' as var;
+
+.articles {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: .5rem;
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 100%;
+    }
+}
+
+.article__card {
+    padding: .5rem;
+    text-decoration: none;
+    color: initial;
+    display: block;
+    border: 1px solid var.$primary;
+    border-radius: var.$border-radius;
+    transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+
+    &:hover {
+        box-shadow: 0 .125rem .25rem rgba($color: #000000, $alpha: .25);
+        transform: translateY(-4px);
+    }
+}
+
+.article__card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .25rem;
+    margin-bottom: .5rem;
+
+    & > div {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .25rem;
+    }
+
+    .article__card__externalLinkIcon {
+        fill: var.$primary;
+        width: calc(var.$font-size * 1.25);
+        height: calc(var.$font-size * 1.25);
+    }
+}
+
+.article__card__title {
+    font-size: var.$font-size;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 2lh;
+    margin: .5rem 0;
+}
+
+.article__card__footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: .25rem;
+    margin-top: .5rem;
+    font-size: calc(var.$font-size * 0.9);
+}

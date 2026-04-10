@@ -1,0 +1,11 @@
+@use '@/app/variables.module.scss' as var;
+
+.loading {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+
+.spinner *:not(.bg) {
+    fill: var.$primary
+}

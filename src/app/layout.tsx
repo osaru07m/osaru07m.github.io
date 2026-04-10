@@ -6,6 +6,7 @@ import SiteHeader from "@/components/layouts/SiteHeader";
 import SiteFooter from "@/components/layouts/SiteFooter";
 import Navigation from "@/components/layouts/Navigation/Navigation";
 import { spaceMono } from "@/fonts";
+import { ScrollToTopButton } from "@/components/layouts/ScrollToTopButton/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: {
@@ -67,6 +68,8 @@ export default function RootLayout({
         <Navigation />
 
         <SiteFooter />
+
+        <ScrollToTopButton />
 
         <GoogleAnalytics gaId="G-GK03ZK4487" />
       </body>

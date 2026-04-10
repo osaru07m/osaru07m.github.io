@@ -1,5 +1,5 @@
 import { Work } from "@/types";
-import styles from "@/features/home/works/works.module.scss";
+import styles from "@/features/works/works.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 

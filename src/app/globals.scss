@@ -34,6 +34,10 @@ header {
     display: flex;
 }
 
+main {
+    min-height: calc(100dvh - var.$header-height);
+}
+
 footer {
     background-color: #ffffff;
     padding: 1rem;
@@ -97,6 +101,10 @@ section {
     border-radius: .35rem;
     box-shadow: 0 .125rem .25rem #00000013;
 
+    &:first-of-type {
+        margin-top: 0;
+    }
+
     @media screen and (max-width: 767px) {
         width: 95dvw;
         width: 95vw;
@@ -127,5 +135,59 @@ h4 {
 
     @media screen and (max-width: 767px) {
         font-size: calc(var.$font-size * 1.25 * .9);
+    }
+}
+
+.breadcrumbs {
+    width: 80dvw;
+    width: 80vw;
+    display: flex;
+    gap: .5rem;
+    list-style: none;
+    margin: auto auto 2rem auto;
+    padding: .5rem;
+
+    @media screen and (max-width: 767px) {
+        width: 95dvw;
+        width: 95vw;
+    }
+
+    li {
+        &:not(:last-of-type)::after {
+            content: '/';
+            display: inline-block;
+            margin-left: .5rem;
+            color: var.$primary;
+        }
+
+        a {
+            color: var.$primary;
+            text-decoration: none;
+            position: relative;
+
+            &:hover {
+                color: var.$secondary;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 2px;
+                background-color: var.$secondary;
+                transition: width .15s linear;
+            }
+        }
+
+        .active {
+            color: var.$accent;
+        }
     }
 }

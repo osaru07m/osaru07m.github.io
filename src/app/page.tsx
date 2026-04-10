@@ -2,10 +2,10 @@ import { Config } from "@/config";
 import Image from "next/image";
 import styles from "@/app/page.module.scss";
 import { cascadiaMono, spaceMono } from "@/fonts";
-import { WorkList } from "@/features/home";
+import { WorkList, ArticleGrid } from "@/features/home";
 import Button from "@/components/ui/Button/Button";
-import ArticleGrid from "@/features/home/articles/ArticleGrid";
 import { Suspense } from "react";
+import { Loading } from "@/components/ui/Loading/Loading";
 
 export default async function Home() {
 
@@ -32,7 +32,7 @@ export default async function Home() {
                 <section id="works">
                     <h3 className={spaceMono.className}>Works</h3>
 
-                    <Suspense fallback="loading...">
+                    <Suspense fallback={<Loading />}>
                         <WorkList />
 
                         <div className={styles.works__footer}>
@@ -44,7 +44,7 @@ export default async function Home() {
                 <section id="articles">
                     <h3 className={spaceMono.className}>Articles</h3>
 
-                    <Suspense fallback="loading...">
+                    <Suspense fallback={<Loading />}>
                         <ArticleGrid />
 
                         <div className={styles.articles__footer}>

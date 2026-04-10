@@ -1,0 +1,55 @@
+@use '@/app/variables.module.scss' as var;
+$size: 3rem;
+$position: 1.5rem;
+
+.button {
+    width: $size;
+    height: $size;
+    position: fixed;
+    bottom: $position;
+    right: $position;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba($color: var.$primary, $alpha: .8);
+    color: #ffffff;
+    transition:
+        background-color .25s ease-in-out,
+        transform .25s linear;
+    cursor: pointer;
+    z-index: 1000;
+    transform: scale(1);
+
+    &:not(.isVisible) {
+        transform: scale(0) rotate(-360deg);
+    }
+
+    &:hover {
+        background-color: var.$primary;
+        transform: translateY(-3px);
+
+        .icon {
+            animation: moveIconAnimation 1.5s linear infinite;
+        }
+    }
+}
+
+.icon {
+    width: calc($size * 80%);
+    fill: #ffffff;
+}
+
+@keyframes moveIconAnimation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
