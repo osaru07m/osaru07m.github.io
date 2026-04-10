@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     siteName: Config.siteMeta.title,
     images: [
       {
-        url: 'https://osaru07m.github.io/ogp.png',
+        url: 'https://osaru07m.github.io/icon.png',
         width: 800,
-        height: 600,
+        height: 800,
       }
     ],
     locale: 'en_US',
@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     creator: `@${Config.profiles.x_twitter.username}`,
     images: ['https://osaru07m.github.io/icon.png'],
   },
+  verification: {
+    google: "D4HQPTE17WYelaOFG75TRGqlxTKvTMlMqT3_tRR2cYs"
+  }
 };
 
 export const viewport: Viewport = {
