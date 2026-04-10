@@ -25,6 +25,7 @@ export default function Navigation() {
                 <ul className={styles.navigation__items}>
                     <li><a href="/">Home</a></li>
                     <li><a href="/works">Works</a></li>
+                    <li><a href="/releases">Releases</a></li>
                     <li><a href="/articles">Articles</a></li>
                 </ul>
             </nav>

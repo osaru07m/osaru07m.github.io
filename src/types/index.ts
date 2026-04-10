@@ -22,9 +22,24 @@ export type Work = {
 }
 
 export type Article = {
-    title: string,
-    link: string,
-    pubDate?: Date | undefined,
-    source: string,
-    favicon: string,
+  title: string,
+  link: string,
+  pubDate?: Date | undefined,
+  source: string,
+  favicon: string,
+}
+
+export type Release = {
+  id: string,
+  title: string,
+  url?: string,
+  document_url?: string,
+  comment: string,
+  image?: {
+    url: string,
+    alt?: string,
+    width?: number,
+    height?: number,
+  },
+  started_at: string
 }

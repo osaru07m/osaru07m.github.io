@@ -1,0 +1,46 @@
+@use '@/app/variables.module.scss' as var;
+
+.releases {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: .5rem;
+
+    @media screen and (max-width: 767px) {
+        grid-template-columns: 100%;
+    }
+}
+
+.release__card {
+    padding: .5rem;
+    text-decoration: none;
+    color: initial;
+    display: block;
+    border: 1px solid var.$primary;
+    border-radius: var.$border-radius;
+    transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+.release__card__header {
+    img {
+        position: initial !important;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: scale-down;
+    }
+}
+
+.release__card__title {
+    display: block;
+    margin: 0;
+    padding: .75rem;
+    border-bottom: 1.5px dashed var.$primary;
+}
+
+.release__card__footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: .5rem;
+}

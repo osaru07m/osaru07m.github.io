@@ -17,6 +17,14 @@
 
     transition: border .25s ease-in-out;
 
+    &.btn_sm {
+        padding: .125rem .5rem;
+
+        .btn__text {
+            font-size: var.$font-size;
+        }
+    }
+
     .btn__text {
         color: var.$primary;
         flex-shrink: 0;

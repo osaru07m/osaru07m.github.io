@@ -2,7 +2,7 @@ import { Config } from "@/config";
 import Image from "next/image";
 import styles from "@/app/page.module.scss";
 import { cascadiaMono, spaceMono } from "@/fonts";
-import { WorkList, ArticleGrid } from "@/features/home";
+import { WorkList, ArticleGrid, ReleaseGrid } from "@/features/home";
 import Button from "@/components/ui/Button/Button";
 import { Suspense } from "react";
 import { Loading } from "@/components/ui/Loading/Loading";
@@ -37,6 +37,18 @@ export default async function Home() {
 
                         <div className={styles.works__footer}>
                             <Button href="/works">See more...</Button>
+                        </div>
+                    </Suspense>
+                </section>
+
+                <section id="releases">
+                    <h3 className={spaceMono.className}>Releases</h3>
+
+                    <Suspense fallback={<Loading />}>
+                        <ReleaseGrid />
+
+                        <div className={styles.releases__footer}>
+                            <Button href="/releases">See more...</Button>
                         </div>
                     </Suspense>
                 </section>
