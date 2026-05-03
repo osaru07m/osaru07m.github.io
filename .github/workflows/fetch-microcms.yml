@@ -21,7 +21,7 @@ jobs:
         run: npm ci
 
       - name: Fetch microCMS data
-        run: npm run fetch:cms
+        run: npm run fetch-microcms
 
       - name: Commit & Push
         run: |
