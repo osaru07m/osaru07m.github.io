@@ -30,6 +30,12 @@
             display: flex;
         }
 
+        .works__item__product_preview_button {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
         .works__item__tags {
             display: flex;
             flex-wrap: wrap;

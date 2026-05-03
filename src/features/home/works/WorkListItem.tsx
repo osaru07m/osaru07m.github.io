@@ -2,6 +2,7 @@ import { Work } from "@/types";
 import styles from "@/features/home/works/works.module.scss";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "@/components/ui/Button/Button";
 
 export type Props = {
     work: Work
@@ -24,6 +25,16 @@ export default function WorkListItem({ work }: Props) {
                         ) : (
                             <span>{work.client_name}</span>
                         )}
+                    </div>
+                )}
+
+                {work.product_url && (
+                    <div className={styles.works__item__product_preview_button}>
+                        <Button
+                            href={work.product_url}
+                            size="sm"
+                            isBlank={true}
+                        >Preview</Button>
                     </div>
                 )}
 
