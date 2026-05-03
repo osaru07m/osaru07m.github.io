@@ -5,6 +5,9 @@ on:
   repository_dispatch:
     types: [microcms-update]
 
+permissions:
+  contents: write
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
