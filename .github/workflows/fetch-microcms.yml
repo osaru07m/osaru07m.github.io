@@ -1,0 +1,34 @@
+name: fetch-microcms
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [microcms-update]
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Fetch microCMS data
+        run: npm run fetch:cms
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+
+          git add src/data/*.json
+
+          git diff --cached --quiet || git commit -m "chore: update microCMS data"
+          git push

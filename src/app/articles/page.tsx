@@ -2,6 +2,7 @@ import { Config } from "@/config";
 import { Suspense } from "react";
 import { Loading } from "@/components/ui/Loading/Loading";
 import { ArticleGrid } from "@/features/articles";
+import Link from "next/link";
 
 export default async function Articles() {
     return (
@@ -9,7 +10,7 @@ export default async function Articles() {
             <h1 className="visually-hidden">{Config.siteMeta.title}</h1>
             <main>
                 <ul className="breadcrumbs">
-                    <li><a href="/">Home</a></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><span className="active">Articles</span></li>
                 </ul>
 

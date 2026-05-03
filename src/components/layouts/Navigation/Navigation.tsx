@@ -6,6 +6,7 @@ import { Config } from "@/config";
 import Image from "next/image";
 import BarsIcon from "@/components/ui/Icon/BarsIcon";
 import XMarkIcon from "@/components/ui/Icon/XMarkIcon";
+import Link from "next/link";
 
 export default function Navigation() {
     const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,10 @@ export default function Navigation() {
                     <span>{Config.siteMeta.title}</span>
                 </div>
                 <ul className={styles.navigation__items}>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/works">Works</a></li>
-                    <li><a href="/releases">Releases</a></li>
-                    <li><a href="/articles">Articles</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/works">Works</Link></li>
+                    <li><Link href="/releases">Releases</Link></li>
+                    <li><Link href="/articles">Articles</Link></li>
                 </ul>
             </nav>
 

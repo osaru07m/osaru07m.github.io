@@ -1,0 +1,14 @@
+[
+  {
+    "id": "jos19rkupza",
+    "createdAt": "2026-04-10T07:18:58.306Z",
+    "updatedAt": "2026-04-10T07:20:28.537Z",
+    "publishedAt": "2026-04-10T07:20:28.537Z",
+    "revisedAt": "2026-04-10T07:20:28.537Z",
+    "title": "Japanese holidays JSON API",
+    "url": "https://osaru07m.github.io/useful_api/holidays.json",
+    "document_url": "https://github.com/osaru07m/useful_api/wiki/holidays.json",
+    "comment": "Simple JSON API for Japanese holidays. :)",
+    "started_at": "2026-04-09T15:00:00.000Z"
+  }
+]

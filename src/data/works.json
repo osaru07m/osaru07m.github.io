@@ -1,0 +1,148 @@
+[
+  {
+    "id": "n3bi72jrw4x",
+    "createdAt": "2026-03-18T12:28:30.092Z",
+    "updatedAt": "2026-03-19T10:09:08.349Z",
+    "publishedAt": "2026-03-18T12:33:04.634Z",
+    "revisedAt": "2026-03-19T10:09:08.349Z",
+    "title": "Web Application Development for Event Management Team",
+    "description": "We operate an in-house event that combines study sessions and social gatherings. I developed a web application for the operating team to manage information related to this event.",
+    "client_name": "凪コミュ！",
+    "skills": [
+      "Laravel",
+      "PHP",
+      "jQuery",
+      "Ajax",
+      "Bootstrap CSS",
+      "CSS",
+      "MySQL"
+    ],
+    "product_image": {
+      "url": "https://images.microcms-assets.io/assets/331cc4f7f7ec41c2bfef7da3f1fd8be2/4e4c3c7ebddd4c77bb98f816670f7c53/pr%E7%94%BB%E5%83%8F.png",
+      "height": 1080,
+      "width": 1920,
+      "alt": "test"
+    },
+    "start_at": "2025-12-03T00:00:00.000Z",
+    "end_at": "2025-12-31T00:00:00.000Z"
+  },
+  {
+    "id": "kw8le6qdyx",
+    "createdAt": "2026-05-03T04:41:42.427Z",
+    "updatedAt": "2026-05-03T06:30:23.962Z",
+    "publishedAt": "2026-05-03T05:06:32.745Z",
+    "revisedAt": "2026-05-03T06:30:23.962Z",
+    "title": "New Year's Special Site Development",
+    "description": "I produced a special New Year's website as part of an in-house event planning project for which I serve as the lead representative.\nI made an effort to incorporate a design appropriate for the New Year.",
+    "client_name": "凪コミュ！",
+    "skills": [
+      "jQuery",
+      "SCSS",
+      "CSS",
+      "GSAP"
+    ],
+    "product_url": "https://osaru07m.github.io/lnc_new-year-2026-lp/",
+    "product_image": {
+      "url": "https://images.microcms-assets.io/assets/331cc4f7f7ec41c2bfef7da3f1fd8be2/25eb34c24e6e489aa02b9b3223ab01b6/lnc_new-year-2026-lp_mockup.png",
+      "height": 1080,
+      "width": 1920
+    },
+    "start_at": "2025-11-29T15:00:00.000Z",
+    "end_at": "2026-01-11T15:00:00.000Z"
+  },
+  {
+    "id": "4cv3zaqcbu",
+    "createdAt": "2026-03-18T12:28:30.092Z",
+    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "publishedAt": "2026-03-18T12:33:04.634Z",
+    "revisedAt": "2026-03-18T12:33:04.634Z",
+    "title": "Internal Bulletin Board Web System Development",
+    "description": "I developed an internal bulletin board web system. I focused on UI/UX and was able to create a user-friendly system, drawing inspiration from recent social media platforms.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "jQuery",
+      "Ajax",
+      "Bootstrap CSS",
+      "CSS",
+      "MySQL"
+    ],
+    "start_at": "2025-09-01T00:00:00.000Z",
+    "end_at": "2025-09-30T00:00:00.000Z"
+  },
+  {
+    "id": "xffsubw49pdh",
+    "createdAt": "2026-04-10T04:27:56.100Z",
+    "updatedAt": "2026-04-10T04:52:42.305Z",
+    "publishedAt": "2026-04-10T04:52:42.305Z",
+    "revisedAt": "2026-04-10T04:52:42.305Z",
+    "title": "Discord bot development",
+    "description": "A friend asked me to build a bot that links game accounts with Discord accounts to create a better experience.",
+    "skills": [
+      "Node.js"
+    ],
+    "start_at": "2024-10-08T15:00:00.000Z",
+    "end_at": "2024-10-30T15:00:00.000Z"
+  },
+  {
+    "id": "bjr5w894d25u",
+    "createdAt": "2026-03-18T12:28:30.092Z",
+    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "publishedAt": "2026-03-18T12:33:04.634Z",
+    "revisedAt": "2026-03-18T12:33:04.634Z",
+    "title": "Web Server and Domain Setup",
+    "description": "For the launch of a new personal project site, I set up the web server and domain (currently closed). I also provided similar setup support for freelance clients.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "jQuery",
+      "Bootstrap CSS",
+      "CSS",
+      "MySQL"
+    ],
+    "start_at": "2023-06-26T00:00:00.000Z",
+    "end_at": "2023-10-26T00:00:00.000Z"
+  },
+  {
+    "id": "1gc-b4p65",
+    "createdAt": "2026-03-18T12:28:30.092Z",
+    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "publishedAt": "2026-03-18T12:33:04.634Z",
+    "revisedAt": "2026-03-18T12:33:04.634Z",
+    "title": "Major Website Renovation",
+    "description": "Commissioned by an acquaintance's company, I undertook a major renovation. At the client's request, I redesigned the site to incorporate trendy UI designs and introduced features such as a news section.",
+    "skills": [
+      "PHP",
+      "jQuery",
+      "Ajax",
+      "SCSS",
+      "CSS",
+      "MySQL"
+    ],
+    "comment": "<p>This project&apos;s deliverable is not publicly disclosed due to client circumstances.</p>",
+    "start_at": "2021-01-14T00:00:00.000Z",
+    "end_at": "2021-03-15T00:00:00.000Z"
+  },
+  {
+    "id": "1wmq113h15ed",
+    "createdAt": "2026-03-18T12:28:30.092Z",
+    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "publishedAt": "2026-03-18T12:33:04.634Z",
+    "revisedAt": "2026-03-18T12:33:04.634Z",
+    "title": "Shift Management Application Development",
+    "description": "Commissioned by an acquaintance's company, I developed this application. We actively incorporated feedback from employees and managers, resulting in high client satisfaction.",
+    "skills": [
+      "PHP",
+      "Laravel",
+      "jQuery",
+      "Ajax",
+      "Bootstrap CSS",
+      "SCSS",
+      "CSS",
+      "MySQL"
+    ],
+    "comment": "<p>This project&apos;s deliverable is not publicly disclosed due to client circumstances.</p>",
+    "start_at": "2019-08-25T00:00:00.000Z",
+    "end_at": "2019-10-30T00:00:00.000Z"
+  }
+]

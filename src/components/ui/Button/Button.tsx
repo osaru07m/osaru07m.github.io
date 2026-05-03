@@ -5,10 +5,11 @@ import { ButtonIcon } from "./ButtonIcon";
 type Props = {
   href?: string,
   size?: 'sm' | 'lg',
+  isBlank?: boolean,
   children: React.ReactNode,
 };
 
-export default function Button({ href, size, children }: Props) {
+export default function Button({ href, size, isBlank, children }: Props) {
   let className = '';
 
   switch (size) {
@@ -27,7 +28,12 @@ export default function Button({ href, size, children }: Props) {
 
   if (href) {
     return (
-      <Link href={href} className={className}>
+      <Link
+        href={href}
+        className={className}
+        target={isBlank ? "_blank" : undefined}
+        rel={isBlank ? "noopener noreferrer" : undefined}
+      >
         <span className={styles.btn__text}>{children}</span>
         <ButtonIcon className={styles.btn__icon} />
       </Link>

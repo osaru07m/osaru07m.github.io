@@ -20,9 +20,9 @@ export default async function Home() {
                 />
                 <h1 className={[styles.keyVisual__title, cascadiaMono.className].join(" ")}>{Config.siteMeta.title}</h1>
                 <div className={styles.keyVisual__introduce}>
-                    <p>I'm Osaru, an engineer based in Japan.</p>
+                    <p>I&apos;m Osaru, an engineer based in Japan.</p>
                     <p>I develop web applications independently.</p>
-                    <p>Currently, I'm building a task and project management system.</p>
+                    <p>Currently, I&apos;m building a task and project management system.</p>
                 </div>
             </div>
 
