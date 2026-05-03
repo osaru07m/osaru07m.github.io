@@ -3,9 +3,6 @@ name: Deploy to Pages
 on:
   push:
     branches: ["main"]
-  workflow_dispatch:
-  repository_dispatch:
-    types: [microcms-update]
 
 permissions:
   contents: read
