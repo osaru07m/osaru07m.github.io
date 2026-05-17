@@ -53,11 +53,13 @@
   {
     "id": "4cv3zaqcbu",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "updatedAt": "2026-05-17T22:39:56.348Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-03-18T12:33:04.634Z",
-    "title": "Internal Bulletin Board Web System Development",
-    "description": "I developed an internal bulletin board web system. I focused on UI/UX and was able to create a user-friendly system, drawing inspiration from recent social media platforms.",
+    "revisedAt": "2026-05-17T22:39:56.348Z",
+    "title": "社内向け掲示板システム 大型改修",
+    "description": "社内向け掲示板のWebシステムを大型改修しました。\nUI/UXに重点を置き、最近人気のプラットフォーム等を参考にしながら、ユーザーフレンドリーなシステムを構築することができました。",
+    "client_name": "株式会社LULL",
+    "client_url": "https://lull-inc.co.jp/",
     "skills": [
       "PHP",
       "Laravel",
