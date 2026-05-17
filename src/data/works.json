@@ -89,18 +89,13 @@
   {
     "id": "bjr5w894d25u",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "updatedAt": "2026-05-17T22:41:44.635Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-03-18T12:33:04.634Z",
-    "title": "Web Server and Domain Setup",
-    "description": "For the launch of a new personal project site, I set up the web server and domain (currently closed). I also provided similar setup support for freelance clients.",
+    "revisedAt": "2026-05-17T22:41:44.635Z",
+    "title": "Webサーバー・ドメインのセットアップ",
+    "description": "新しい個人プロジェクトサイトの立ち上げにあたり、ウェブサーバーとドメインの設定を行いました（現在は非公開）。\nまた、フリーランスのクライアントに対しても、同様のセットアップサポートを提供しました。",
     "skills": [
-      "PHP",
-      "Laravel",
-      "jQuery",
-      "Bootstrap CSS",
-      "CSS",
-      "MySQL"
+      "インフラ"
     ],
     "start_at": "2023-06-26T00:00:00.000Z",
     "end_at": "2023-10-26T00:00:00.000Z"
