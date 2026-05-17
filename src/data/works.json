@@ -2,11 +2,11 @@
   {
     "id": "n3bi72jrw4x",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-03-19T10:09:08.349Z",
+    "updatedAt": "2026-05-17T22:37:29.239Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-03-19T10:09:08.349Z",
-    "title": "Web Application Development for Event Management Team",
-    "description": "We operate an in-house event that combines study sessions and social gatherings. I developed a web application for the operating team to manage information related to this event.",
+    "revisedAt": "2026-05-17T22:37:29.239Z",
+    "title": "社内イベント管理ツール制作",
+    "description": "私が運営代表を行なっている社内イベント「凪コミュ！」のイベント管理ツールを制作しました。\n参加状況はもちろん、参加特典や招待履歴など、さまざまな情報を一元管理できるよう意識しました。",
     "client_name": "凪コミュ！",
     "skills": [
       "Laravel",
