@@ -2,11 +2,11 @@
   {
     "id": "n3bi72jrw4x",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-05-17T22:37:29.239Z",
+    "updatedAt": "2026-05-17T22:46:06.568Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-05-17T22:37:29.239Z",
+    "revisedAt": "2026-05-17T22:46:06.568Z",
     "title": "社内イベント管理ツール制作",
-    "description": "私が運営代表を行なっている社内イベント「凪コミュ！」のイベント管理ツールを制作しました。\n参加状況はもちろん、参加特典や招待履歴など、さまざまな情報を一元管理できるよう意識しました。",
+    "description": "私が運営代表を務める社内イベント（凪コミュ！）のイベント管理ツールを制作しました。\n参加状況はもちろん、参加特典や招待履歴など、さまざまな情報を一元管理できるよう意識しました。",
     "client_name": "凪コミュ！",
     "skills": [
       "Laravel",
@@ -29,11 +29,11 @@
   {
     "id": "kw8le6qdyx",
     "createdAt": "2026-05-03T04:41:42.427Z",
-    "updatedAt": "2026-05-03T06:30:23.962Z",
+    "updatedAt": "2026-05-17T22:45:45.541Z",
     "publishedAt": "2026-05-03T05:06:32.745Z",
-    "revisedAt": "2026-05-03T06:30:23.962Z",
-    "title": "New Year's Special Site Development",
-    "description": "I produced a special New Year's website as part of an in-house event planning project for which I serve as the lead representative.\nI made an effort to incorporate a design appropriate for the New Year.",
+    "revisedAt": "2026-05-17T22:45:45.541Z",
+    "title": "社内向けイベント 新年特設サイト 制作",
+    "description": "私が運営代表を務める社内イベント（凪コミュ！）のプロジェクトとして、新年の特別ウェブサイトを制作しました。\n新年にふさわしいデザインを取り入れるよう努めました。",
     "client_name": "凪コミュ！",
     "skills": [
       "jQuery",
