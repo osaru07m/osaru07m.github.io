@@ -2,12 +2,12 @@
   {
     "id": "jos19rkupza",
     "createdAt": "2026-04-10T07:18:58.306Z",
-    "updatedAt": "2026-05-03T08:35:38.015Z",
+    "updatedAt": "2026-05-17T22:35:00.001Z",
     "publishedAt": "2026-04-10T07:20:28.537Z",
-    "revisedAt": "2026-05-03T08:35:38.015Z",
-    "title": "Useful API",
+    "revisedAt": "2026-05-17T22:35:00.001Z",
+    "title": "なんか便利なAPI",
     "url": "https://github.com/osaru07m/useful_api/",
-    "comment": "Useful data is available for download in JSON and CSV formats.",
+    "comment": "JSON形式およびCSV形式で出力されます。\nExcel・スプレッドシートはもちろん、さまざまなサイトやアプリに実装することで便利なデータを公開しています。",
     "started_at": "2026-04-09T15:00:00.000Z"
   }
 ]
