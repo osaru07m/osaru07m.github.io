@@ -75,11 +75,11 @@
   {
     "id": "xffsubw49pdh",
     "createdAt": "2026-04-10T04:27:56.100Z",
-    "updatedAt": "2026-04-10T04:52:42.305Z",
+    "updatedAt": "2026-05-17T22:44:32.450Z",
     "publishedAt": "2026-04-10T04:52:42.305Z",
-    "revisedAt": "2026-04-10T04:52:42.305Z",
-    "title": "Discord bot development",
-    "description": "A friend asked me to build a bot that links game accounts with Discord accounts to create a better experience.",
+    "revisedAt": "2026-05-17T22:44:32.450Z",
+    "title": "Discord Bot制作",
+    "description": "友人から依頼され、ゲームアカウントとDiscordアカウントを連携させて、より良い体験を提供するボットを制作しました。",
     "skills": [
       "Node.js"
     ],
