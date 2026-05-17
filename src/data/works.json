@@ -103,11 +103,11 @@
   {
     "id": "1gc-b4p65",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "updatedAt": "2026-05-17T22:42:57.436Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-03-18T12:33:04.634Z",
-    "title": "Major Website Renovation",
-    "description": "Commissioned by an acquaintance's company, I undertook a major renovation. At the client's request, I redesigned the site to incorporate trendy UI designs and introduced features such as a news section.",
+    "revisedAt": "2026-05-17T22:42:57.436Z",
+    "title": "ウェブサイトの全面リニューアル",
+    "description": "知人の会社から依頼を受け、大規模なリニューアルを手掛けました。\nクライアントの要望に応え、トレンドのUIデザインを取り入れたサイトのリデザインを行い、ニュースセクションなどの機能を導入しました。",
     "skills": [
       "PHP",
       "jQuery",
@@ -116,7 +116,7 @@
       "CSS",
       "MySQL"
     ],
-    "comment": "<p>This project&apos;s deliverable is not publicly disclosed due to client circumstances.</p>",
+    "comment": "<p>クライアントの事情により、本プロジェクトの成果物は公開されておりません。</p>",
     "start_at": "2021-01-14T00:00:00.000Z",
     "end_at": "2021-03-15T00:00:00.000Z"
   },
