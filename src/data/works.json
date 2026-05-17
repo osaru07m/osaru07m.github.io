@@ -25,9 +25,9 @@
   {
     "id": "n3bi72jrw4x",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-05-17T22:46:06.568Z",
+    "updatedAt": "2026-05-17T23:18:03.550Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-05-17T22:46:06.568Z",
+    "revisedAt": "2026-05-17T23:18:03.550Z",
     "title": "社内イベント管理ツール制作",
     "description": "私が運営代表を務める社内イベント（凪コミュ！）のイベント管理ツールを制作しました。\n参加状況はもちろん、参加特典や招待履歴など、さまざまな情報を一元管理できるよう意識しました。",
     "client_name": "凪コミュ！",
@@ -40,12 +40,6 @@
       "CSS",
       "MySQL"
     ],
-    "product_image": {
-      "url": "https://images.microcms-assets.io/assets/331cc4f7f7ec41c2bfef7da3f1fd8be2/4e4c3c7ebddd4c77bb98f816670f7c53/pr%E7%94%BB%E5%83%8F.png",
-      "height": 1080,
-      "width": 1920,
-      "alt": "test"
-    },
     "start_at": "2025-12-03T00:00:00.000Z",
     "end_at": "2025-12-31T00:00:00.000Z"
   },
