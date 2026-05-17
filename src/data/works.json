@@ -2,9 +2,9 @@
   {
     "id": "zs_2tordfg",
     "createdAt": "2026-05-17T23:04:55.668Z",
-    "updatedAt": "2026-05-17T23:06:34.269Z",
+    "updatedAt": "2026-05-17T23:17:36.032Z",
     "publishedAt": "2026-05-17T23:06:24.269Z",
-    "revisedAt": "2026-05-17T23:06:34.269Z",
+    "revisedAt": "2026-05-17T23:17:36.032Z",
     "title": "社内向けイベント 新企画特設サイト 制作",
     "description": "私が運営代表を務める社内イベント（凪コミュ！）のプロジェクトとして、新企画「凪スクール！」の特別ウェブサイトを制作しました。\n配色・表示速度等のパフォーマンス面などを意識し、親しみやすいサイト制作を行いました。",
     "client_name": "凪コミュ！",
@@ -14,6 +14,11 @@
       "Astro",
       "SCSS"
     ],
+    "product_image": {
+      "url": "https://images.microcms-assets.io/assets/331cc4f7f7ec41c2bfef7da3f1fd8be2/9b13984298924cbf84f8a7a129d62d3b/lnc_nagi-school-lp_mockup.png",
+      "height": 1080,
+      "width": 1920
+    },
     "start_at": "2026-05-08T06:30:00.000Z",
     "end_at": "2026-05-17T11:00:00.000Z"
   },
