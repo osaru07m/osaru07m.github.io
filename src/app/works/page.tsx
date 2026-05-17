@@ -10,12 +10,12 @@ export default async function Works() {
             <h1 className="visually-hidden">{Config.siteMeta.title}</h1>
             <main>
                 <ul className="breadcrumbs">
-                    <li><Link href="/">Home</Link></li>
-                    <li><span className="active">Works</span></li>
+                    <li><Link href="/">ホーム</Link></li>
+                    <li><span className="active">実績</span></li>
                 </ul>
 
                 <section>
-                    <h2>Works</h2>
+                    <h2>実績</h2>
 
                     <Suspense fallback={<Loading />}>
                         <WorkList />

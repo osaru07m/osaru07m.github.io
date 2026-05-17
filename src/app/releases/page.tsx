@@ -10,12 +10,12 @@ export default async function Releases() {
             <h1 className="visually-hidden">{Config.siteMeta.title}</h1>
             <main>
                 <ul className="breadcrumbs">
-                    <li><Link href="/">Home</Link></li>
-                    <li><span className="active">Releases</span></li>
+                    <li><Link href="/">ホーム</Link></li>
+                    <li><span className="active">成果物</span></li>
                 </ul>
 
                 <section>
-                    <h2>Releases</h2>
+                    <h2>成果物</h2>
 
                     <Suspense fallback={<Loading />}>
                         <ReleaseGrid />

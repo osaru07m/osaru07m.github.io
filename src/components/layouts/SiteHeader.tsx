@@ -13,7 +13,7 @@ export default function SiteHeader() {
                     fill
                     className={styles.header__logo}
                 />
-                <span className={styles.header__title}>Osaru</span>
+                <span className={styles.header__title}>おさる</span>
             </Link>
         </header>
     );

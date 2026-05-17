@@ -57,7 +57,7 @@ export function Loading() {
                 </g>
             </svg>
 
-            <span className="visually-hidden">Loading</span>
+            <span className="visually-hidden">ローディング中</span>
         </div>
     )
 }

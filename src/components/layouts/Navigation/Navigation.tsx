@@ -24,10 +24,10 @@ export default function Navigation() {
                     <span>{Config.siteMeta.title}</span>
                 </div>
                 <ul className={styles.navigation__items}>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/works">Works</Link></li>
-                    <li><Link href="/releases">Releases</Link></li>
-                    <li><Link href="/articles">Articles</Link></li>
+                    <li><Link href="/">ホーム</Link></li>
+                    <li><Link href="/works">実績</Link></li>
+                    <li><Link href="/releases">成果物</Link></li>
+                    <li><Link href="/articles">記事</Link></li>
                 </ul>
             </nav>
 

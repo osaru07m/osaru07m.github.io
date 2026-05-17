@@ -1,7 +1,7 @@
 export const Config = {
     siteMeta: {
-        title: "Osaru's portfolio.",
-        description: "I'm Osaru, an engineer based in Japan. I develop web applications independently. Currently, I'm building a task and project management system.",
+        title: "おさるのポートフォリオ",
+        description: "日本在住のエンジニア、おさるです。主にWebアプリケーションを開発しています。現在、OSSのタスクおよびプロジェクト管理システムを制作しています。",
     },
     feeds: [
         {

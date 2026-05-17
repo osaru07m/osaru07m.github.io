@@ -20,47 +20,47 @@ export default async function Home() {
                 />
                 <h1 className={[styles.keyVisual__title, cascadiaMono.className].join(" ")}>{Config.siteMeta.title}</h1>
                 <div className={styles.keyVisual__introduce}>
-                    <p>I&apos;m Osaru, an engineer based in Japan.</p>
-                    <p>I develop web applications independently.</p>
-                    <p>Currently, I&apos;m building a task and project management system.</p>
+                    <p>日本在住のエンジニア、おさるです。</p>
+                    <p>主にWebアプリケーションを開発しています。</p>
+                    <p>現在、OSSのタスクおよびプロジェクト管理システムを制作しています。</p>
                 </div>
             </div>
 
             <main>
-                <h2 className="visually-hidden">Home</h2>
+                <h2 className="visually-hidden">ホーム</h2>
 
                 <section id="works">
-                    <h3 className={spaceMono.className}>Works</h3>
+                    <h3 className={spaceMono.className}>実績</h3>
 
                     <Suspense fallback={<Loading />}>
                         <WorkList />
 
                         <div className={styles.works__footer}>
-                            <Button href="/works">See more...</Button>
+                            <Button href="/works">もっと見る</Button>
                         </div>
                     </Suspense>
                 </section>
 
                 <section id="releases">
-                    <h3 className={spaceMono.className}>Releases</h3>
+                    <h3 className={spaceMono.className}>成果物</h3>
 
                     <Suspense fallback={<Loading />}>
                         <ReleaseGrid />
 
                         <div className={styles.releases__footer}>
-                            <Button href="/releases">See more...</Button>
+                            <Button href="/releases">もっと見る</Button>
                         </div>
                     </Suspense>
                 </section>
 
                 <section id="articles">
-                    <h3 className={spaceMono.className}>Articles</h3>
+                    <h3 className={spaceMono.className}>記事</h3>
 
                     <Suspense fallback={<Loading />}>
                         <ArticleGrid />
 
                         <div className={styles.articles__footer}>
-                            <Button href="/articles">See more...</Button>
+                            <Button href="/articles">もっと見る</Button>
                         </div>
                     </Suspense>
                 </section>

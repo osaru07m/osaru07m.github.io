@@ -17,7 +17,7 @@ export default function WorkListItem({ work }: Props) {
 
                 {work.client_name && (
                     <div className={styles.works__item__client}>
-                        <span>Client:</span>
+                        <span>クライアント:</span>
                         {work.client_url ? (
                             <Link href={work.client_url} target="_blank">
                                 {work.client_name}
@@ -33,7 +33,7 @@ export default function WorkListItem({ work }: Props) {
                         <Button
                             href={work.product_url}
                             isBlank={true}
-                        >Preview</Button>
+                        >プレビュー</Button>
                     </div>
                 )}
 

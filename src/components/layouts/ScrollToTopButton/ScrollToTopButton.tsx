@@ -31,8 +31,8 @@ export function ScrollToTopButton() {
     };
 
     return (
-        <button onClick={scrollToTop} aria-label="Scroll to top" className={`${styles.button} ${isVisible ? styles.isVisible : ''}`}>
-            <span className="visually-hidden">Scroll to top</span>
+        <button onClick={scrollToTop} aria-label="上に戻る" className={`${styles.button} ${isVisible ? styles.isVisible : ''}`}>
+            <span className="visually-hidden">上に戻る</span>
             <AngleTopIcon className={styles.icon} />
         </button>
     );

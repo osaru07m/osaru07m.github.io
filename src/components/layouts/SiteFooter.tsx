@@ -9,7 +9,7 @@ export default function SiteFooter() {
 
     return (
         <footer>
-            <small>&copy; {formatDate(today, "yyyy")} Osaru.</small>
+            <small>&copy; {formatDate(today, "yyyy")} <Link href="https://github.com/osaru07m/" target="_blank">おさる</Link>.</small>
 
             <div id="profiles">
                 {Object.entries(profiles).map(([key, profile]) => (

@@ -10,12 +10,12 @@ export default async function Articles() {
             <h1 className="visually-hidden">{Config.siteMeta.title}</h1>
             <main>
                 <ul className="breadcrumbs">
-                    <li><Link href="/">Home</Link></li>
-                    <li><span className="active">Articles</span></li>
+                    <li><Link href="/">ホーム</Link></li>
+                    <li><span className="active">記事</span></li>
                 </ul>
 
                 <section>
-                    <h2>Articles</h2>
+                    <h2>記事</h2>
 
                     <Suspense fallback={<Loading />}>
                         <ArticleGrid />
