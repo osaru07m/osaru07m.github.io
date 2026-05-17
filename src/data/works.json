@@ -123,11 +123,11 @@
   {
     "id": "1wmq113h15ed",
     "createdAt": "2026-03-18T12:28:30.092Z",
-    "updatedAt": "2026-03-18T12:33:04.634Z",
+    "updatedAt": "2026-05-17T22:43:48.960Z",
     "publishedAt": "2026-03-18T12:33:04.634Z",
-    "revisedAt": "2026-03-18T12:33:04.634Z",
-    "title": "Shift Management Application Development",
-    "description": "Commissioned by an acquaintance's company, I developed this application. We actively incorporated feedback from employees and managers, resulting in high client satisfaction.",
+    "revisedAt": "2026-05-17T22:43:48.960Z",
+    "title": "シフト管理ツール制作",
+    "description": "知人の会社からの依頼を受け、シフト管理ツールを開発しました。\n従業員や管理職からのフィードバックを積極的に取り入れた結果、クライアントから高い評価を得ることができました。",
     "skills": [
       "PHP",
       "Laravel",
@@ -138,7 +138,7 @@
       "CSS",
       "MySQL"
     ],
-    "comment": "<p>This project&apos;s deliverable is not publicly disclosed due to client circumstances.</p>",
+    "comment": "<p>クライアントの事情により、本プロジェクトの成果物は公開されておりません。</p>",
     "start_at": "2019-08-25T00:00:00.000Z",
     "end_at": "2019-10-30T00:00:00.000Z"
   }
