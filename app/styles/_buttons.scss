@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+@mixin button($mainColor: $color-primary, $secondaryColor: $color-white) {
+    background-color: $mainColor;
+    color: $secondaryColor;
+    border: 1px solid transparent;
+    padding: .25rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color .25s ease-in-out;
+    cursor: pointer;
+    font-size: map-get($font-size-map, "md");
+
+    &:hover {
+        background-color: darken($mainColor, 5);
+    }
+}
+
+@mixin button_outline($mainColor: $color-primary) {
+    background-color: transparent;
+    color: $mainColor;
+    border: 1px solid $mainColor;
+    padding: .25rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color .25s ease-in-out;
+    cursor: pointer;
+    font-size: map-get($font-size-map, "md");
+
+    &:hover {
+        background-color: $mainColor;
+        color: lighten($mainColor, 95);
+    }
+}
+
+.btn-primary {
+    @include button($color-primary, $color-white);
+}
+
+.btn-primary_outline {
+    @include button_outline($color-primary);
+}

@@ -1,0 +1,117 @@
+@use "sass:map";
+@use "../../styles/variables" as *;
+@use "../../styles/mixins";
+
+.header {
+    $header-paddingX: 1rem;
+    $header-paddingY: 0.25rem;
+
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: map.get($z-index-map, "header");
+    width: 100%;
+    height: $header-height;
+    padding: $header-paddingY $header-paddingX;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-white;
+    box-shadow: 0 .5rem 1rem rgba($color-black, .25);
+
+    &__brand {
+        font-weight: map-get($font-weight-map, "heavy");
+        text-decoration: none;
+        color: $color-primary;
+        font-size: clamp(map-get($font-size-map, "md"), map-get($font-size-map, "xl"), $header-height);;
+    }
+
+    &__menu {
+        $menu-width: 350px;
+        $menuButton-width: $header-height - $header-paddingY * 2;
+        $menuButton-height: $header-height - $header-paddingY * 2;
+
+        position: relative;
+
+        &Body {
+            position: absolute;
+            top: calc(100% + $header-paddingY);
+            left: calc(100% + $header-paddingX);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1rem;
+            width: $menu-width;
+            height: calc(100dvh - $header-height);
+            transition: left .25s ease-in-out;
+            background-color: darken($color-white, 5);
+            z-index: calc(map-get($z-index-map, "header") - 1);
+
+            @include mixins.mq-md() {
+                width: 100dvw;
+            }
+
+            &_isOpened {
+                left: calc($menu-width * -1 + $menuButton-width + $header-paddingX);
+
+                @include mixins.mq-md() {
+                    left: calc(100dvw * -1 + $menuButton-width + $header-paddingX);
+                }
+            }
+        }
+
+        &Items {
+            margin: 0;
+            padding: 1rem;
+            list-style: none;
+
+            li {
+                &.header__menuHeader {
+                    font-weight: map-get($font-weight-map, "bold");
+                    color: $color-primary;
+                    padding: .25rem 0;
+                    border-bottom: 2.5px solid $color-primary;
+                }
+
+                a {
+                    display: block;
+                    color: $color-black;
+                    margin: .25rem 0;
+                    padding: .25rem 0;
+                    cursor: pointer;
+                    text-decoration: none;
+                    border-bottom: 1px dotted $color-black;
+                }
+            }
+        }
+
+        &Links {
+            list-style: none;
+            margin: 0;
+            padding: .5rem 0 1rem 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 1rem;
+
+            &__item {
+                img {
+                    width: 1.5rem;
+                    height: auto;
+                }
+            }
+        }
+
+        &Button {
+            display: block;
+            width: $menuButton-width;
+            height: $menuButton-height;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+
+            &__Icon {
+                fill: $color-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@use "../styles/variables" as *;
+
+.form {
+    &_box {
+        margin: .5rem auto;
+        width: 100%;
+    }
+
+    &_label {
+        display: block;
+        width: 100%;
+        padding: .25rem 0;
+        color: $color-black;
+
+        &[for] {
+            cursor: pointer;
+        }
+
+        &__required_badge {
+            display: inline-block;
+            background-color: $color-danger;
+            color: $color-white;
+            padding: .125rem .25rem;
+            border-radius: 4px;
+            font-size: map-get($font-size-map, "sm");
+            margin-left: .25rem;
+        }
+    }
+
+    &_control {
+        display: block;
+        width: 100%;
+        padding: .25rem .5rem;
+        border: 1px solid $color-black;
+        border-radius: 4px;
+        font-size: map-get($font-size-map, "md");
+        line-height: 1rem;
+        color: $color-black;
+        background-color: $color-white-pure;
+    }
+
+    &_textarea {
+        display: block;
+        width: 100%;
+        padding: .25rem .5rem;
+        border: 1px solid $color-black;
+        border-radius: 4px;
+        font-size: map-get($font-size-map, "md");
+        line-height: 1rem;
+        field-sizing: content;
+        min-height: 5lh;
+        color: $color-black;
+        background-color: $color-white-pure;
+    }
+
+    &_success_message {
+        color: $color-white;
+        margin: .5rem 0;
+        padding: .5rem;
+        border-radius: 4px;
+        background-color: $color-success;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    &_error_message {
+        color: $color-white;
+        margin: .5rem 0;
+        padding: .5rem;
+        border-radius: 4px;
+        background-color: $color-danger;
+
+        > * {
+            margin: 0;
+        }
+    }
+
+    &_button_box {
+        text-align: center;
+    }
+}

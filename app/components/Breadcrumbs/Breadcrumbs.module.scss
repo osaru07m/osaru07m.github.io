@@ -1,0 +1,41 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins";
+
+.breadcrumbs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    margin: 1rem auto;
+    padding: 0;
+    width: 80dvw;
+    overflow-x: auto;
+
+    @include mixins.mq-md() {
+        width: 90dvw;
+    }
+
+    &__item {
+        display: flex;
+
+        > * {
+            word-break: keep-all;
+            text-wrap: nowrap;
+        }
+
+        &:not(:last-of-type)::after {
+            display: inline-block;
+            content: '/';
+            padding: 0 .5rem;
+        }
+    }
+
+    &__link {
+        color: $color-black;
+        text-decoration: none;
+    }
+
+    &__text {
+        color: $color-primary;
+    }
+}

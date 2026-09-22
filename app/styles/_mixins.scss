@@ -1,0 +1,24 @@
+@use "./variables" as *;
+
+// Media queries
+@mixin mq-lg {
+    @media screen and (max-width: calc($breakpoint-lg - 1px)) {
+        @content;
+    }
+}
+
+@mixin mq-md {
+    @media screen and (max-width: calc($breakpoint-md - 1px)) {
+        @content;
+    }
+}
+
+// Typography
+@mixin line-clamp($lines: 2) {
+    line-height: 1rem;
+    height: calc(1lh * $lines);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lines;
+    overflow: hidden;
+}

@@ -1,0 +1,42 @@
+@use "sass:map";
+
+// Typography
+$font-size: 16px;
+
+$font-size-map: (
+    xxl: calc($font-size * 1.5),
+    xl: calc($font-size * 1.25),
+    md: $font-size,
+    sm: calc($font-size * 0.85)
+);
+
+$font-weight-map: (
+    heavy: 800,
+    bold: 700,
+    normal: 400,
+    thin: 100
+);
+
+// Color system
+$color-white: #f0f0f0;
+$color-white-pure: #ffffff;
+$color-black: #0f0f0f;
+$color-gray: #212529;
+
+$color-primary: #8c391b;
+$color-success: #198754;
+$color-warning: #ffc107;
+$color-danger: #dc3545;
+$color-muted: $color-gray;
+
+// Breakpoints
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Blocks
+$header-height: 3.5rem;
+
+// z-index
+$z-index-map: (
+    header: 900
+);

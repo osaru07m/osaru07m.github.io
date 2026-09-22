@@ -1,0 +1,96 @@
+@use "../../styles/variables" as *;
+
+.work {
+    &__header {
+        $padding-y: 2.5rem;
+        $bar-height: 4px;
+
+        padding-bottom: $padding-y;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            bottom: calc($padding-y / 2 - $bar-height / 2);
+            left: 0;
+            right: 0;
+            display: block;
+            width: 15%;
+            height: $bar-height;
+            background-color: $color-primary;
+            content: '';
+            margin: 0 auto;
+            border-radius: 2.5px;
+        }
+    }
+
+    &__title {
+        color: $color-black;
+        word-break: auto-phrase;
+    }
+
+    &__main_visual {
+        width: 70%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto 1rem auto;
+        border: 1px solid rgba($color-black, .25);
+            ;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .25);
+    }
+
+    &__client {
+        margin-bottom: 1rem;
+
+        h3 {
+            margin: 0;
+            margin-bottom: .25rem;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__intro {
+        padding: .5rem;
+        border: 1px solid $color-primary;
+        background-color: $color-white-pure;
+        border-radius: 4px;
+    }
+
+    &__description {
+        margin-bottom: 1rem;
+
+        &__content {
+            > * {
+                line-height: calc($font-size * 1.5);
+                margin: 0;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+
+    &__skills {
+        margin-bottom: 1rem;
+
+        &__box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        &__tag {
+            padding: .25rem .5rem;
+            background-color: lighten($color-primary, 50);
+            border-radius: .5rem;
+
+        }
+    }
+
+    &__btn_container {
+        text-align: center;
+    }
+}

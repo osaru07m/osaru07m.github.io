@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+
+.newsList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        padding: .5rem .25rem;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: .5rem;
+
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: lighten($color-black, 75%);
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            content: '';
+            width: 0px;
+            height: 1px;
+            background-color: $color-primary;
+            transition: width .25s ease-in-out;
+        }
+
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $color-black;
+        }
+
+        &__date {
+            font-weight: map-get($font-weight-map, "bold");
+            word-break: keep-all;
+        }
+
+        &__title {
+            font-size: map-get($font-size-map, "md");
+            font-weight: map-get($font-weight-map, "normal");
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    }
+}
