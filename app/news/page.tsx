@@ -2,6 +2,9 @@ import NewsData from "@/feature/news/data";
 import NewsList from "../components/News/NewsList";
 import BreadcrumbItem from "../components/Breadcrumbs/types";
 import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
+import { JsonLd } from "../components/JsonLd";
+import { newsListJsonLd } from "@/libs/json-ld/news";
+import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
 
 export default function NewsIndex() {
     const breadcrumbs: BreadcrumbItem[] = [
@@ -15,16 +18,21 @@ export default function NewsIndex() {
     ];
 
     return (
-        <main>
-            <Breadcrumbs items={breadcrumbs} />
+        <>
+            <JsonLd data={breadcrumbsJsonLd(breadcrumbs)} />
+            <JsonLd data={newsListJsonLd(NewsData)} />
 
-            <section id="news">
-                <div className="container">
-                    <h2>お知らせ</h2>
+            <main>
+                <Breadcrumbs items={breadcrumbs} />
 
-                    <NewsList items={NewsData} />
-                </div>
-            </section>
-        </main>
+                <section id="news">
+                    <div className="container">
+                        <h2>お知らせ</h2>
+
+                        <NewsList items={NewsData} />
+                    </div>
+                </section>
+            </main>
+        </>
     );
 }

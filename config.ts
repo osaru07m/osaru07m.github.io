@@ -1,7 +1,9 @@
 const Config = {
     site: {
         title: "おさるのポートフォリオ。",
-        description: ""
+        description: "Webエンジニア おさるのポートフォリオです。",
+        keywords: "おさる,osaru07m,ポートフォリオ,Webエンジニア",
+        url: "https://osaru07m.github.io/"
     },
     microcms: {
         domain: "0lm1z69edn",
