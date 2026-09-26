@@ -5,6 +5,11 @@ import Breadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 import { JsonLd } from "../components/JsonLd";
 import { worksListJsonLd } from "@/libs/json-ld/work";
 import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "制作実績"
+}
 
 export default function NewsIndex() {
     const breadcrumbs: BreadcrumbItem[] = [

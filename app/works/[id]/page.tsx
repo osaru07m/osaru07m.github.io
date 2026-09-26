@@ -10,6 +10,7 @@ import Link from "next/link";
 import { JsonLd } from "@/app/components/JsonLd";
 import { workJsonLd } from "@/libs/json-ld/work";
 import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
+import { Metadata } from "next";
 
 export async function generateStaticParams() {
     return WorkData.map((workItem: Work) => ({
@@ -20,6 +21,20 @@ export async function generateStaticParams() {
 type Props = {
     params: Promise<{ id: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { id } = await params;
+
+    const item = WorkData.find((workItem: Work) => workItem.id === id);
+
+    if (!item) {
+        return {}
+    }
+
+    return {
+        title: item.title
+    }
+}
 
 export default async function NewsDetailPage({ params }: Props) {
     const { id } = await params;
