@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
-import NewsData from "./feature/news/data";
-import WorkData from "./feature/works/data";
+import NewsData from "../feature/news/data";
+import WorkData from "../feature/works/data";
 
 const SITE_URL = "https://osaru07m.github.io";
 
