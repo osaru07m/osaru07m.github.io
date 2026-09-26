@@ -4,6 +4,7 @@ import { LINE_Seed_JP } from "next/font/google";
 import "./styles/globals.scss";
 import HeaderComponent from "@/app/components/Header/Header";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import FooterComponent from "./components/Footer/Footer";
 
 const lineSeedJp = LINE_Seed_JP({
   variable: "--font-line-seed-jp",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <HeaderComponent />
         {children}
         <GoogleAnalytics gaId="G-TPV9H42CE2" />
+        <FooterComponent />
       </body>
     </html>
   );

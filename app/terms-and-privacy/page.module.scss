@@ -1,0 +1,15 @@
+@use "../styles/variables" as *;
+
+.contents_box {
+    width: 65dvw;
+    margin: 0 auto;
+    padding: 1rem .5rem;
+    border-radius: 4px;
+    border: 1px solid $color-primary;
+
+    p {
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
