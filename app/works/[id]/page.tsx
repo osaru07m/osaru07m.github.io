@@ -11,6 +11,7 @@ import { JsonLd } from "@/app/components/JsonLd";
 import { workJsonLd } from "@/libs/json-ld/work";
 import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
 import { Metadata } from "next";
+import Config from "@/config";
 
 export async function generateStaticParams() {
     return WorkData.map((workItem: Work) => ({
@@ -32,7 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: item.title
+        title: item.title,
+        openGraph: {
+            type: "article",
+            siteName: Config.site.title,
+            title: item.title,
+            images: ["/ogp.png"]
+        }
     }
 }
 

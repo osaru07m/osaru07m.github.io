@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     template: `%s | ${Config.site.title}`
   },
   description: Config.site.description,
+  openGraph: {
+    type: "article",
+    siteName: Config.site.title,
+    images: ["/ogp.png"]
+  },
   verification: {
     google: "D4HQPTE17WYelaOFG75TRGqlxTKvTMlMqT3_tRR2cYs"
   }

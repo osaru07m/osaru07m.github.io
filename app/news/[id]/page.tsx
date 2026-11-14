@@ -10,6 +10,7 @@ import { JsonLd } from "@/app/components/JsonLd";
 import { newsJsonLd } from "@/libs/json-ld/news";
 import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
 import { Metadata } from "next";
+import Config from "@/config";
 
 export async function generateStaticParams() {
     return NewsData.map((newsItem: News) => ({
@@ -32,6 +33,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     return {
         title: item.title,
+        openGraph: {
+            title: item.title,
+            type: "article",
+            siteName: Config.site.title,
+            images: ["/ogp.png"]
+        }
     };
 }
 

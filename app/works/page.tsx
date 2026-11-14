@@ -6,9 +6,16 @@ import { JsonLd } from "../components/JsonLd";
 import { worksListJsonLd } from "@/libs/json-ld/work";
 import { breadcrumbsJsonLd } from "@/libs/json-ld/breadcrumbs";
 import { Metadata } from "next";
+import Config from "@/config";
 
 export const metadata: Metadata = {
-    title: "制作実績"
+    title: "制作実績",
+    openGraph: {
+        type: "article",
+        title: "制作実績",
+        siteName: Config.site.title,
+        images: ["/ogp.png"]
+    }
 }
 
 export default function NewsIndex() {

@@ -1,8 +1,15 @@
 import { Metadata } from "next";
 import styles from "./page.module.scss";
+import Config from "@/config";
 
 export const metadata: Metadata = {
-    title: "利用規約とプライバシー"
+    title: "利用規約とプライバシー",
+    openGraph: {
+        type: "article",
+        title: "利用規約とプライバシー",
+        siteName: Config.site.title,
+        images: ["/ogp.png"]
+    }
 }
 
 export default function TermsAndPrivacy() {

@@ -4,7 +4,13 @@ import { Metadata } from "next";
 import { RequiredBadge } from "../components/Form/Badge/Badge";
 
 export const metadata: Metadata = {
-    title: "お問い合わせ"
+    title: "お問い合わせ",
+    openGraph: {
+        type: "article",
+        title: "お問い合わせ",
+        siteName: Config.site.title,
+        images: ["/ogp.png"]
+    }
 }
 
 export default function ContactIndex() {

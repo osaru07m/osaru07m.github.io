@@ -8,6 +8,15 @@ import WorkGrid from "./components/Works/WorkGrid";
 import Config from "@/config";
 import { JsonLd } from "./components/JsonLd";
 import { homeJsonLd } from "@/libs/json-ld/home";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    openGraph: {
+        type: "website",
+        siteName: Config.site.title,
+        images: ["/ogp.png"]
+    }
+}
 
 export default function Home() {
     return (
