@@ -17,6 +17,9 @@ export const metadata: Metadata = {
     template: `%s | ${Config.site.title}`
   },
   description: Config.site.description,
+  verification: {
+    google: "D4HQPTE17WYelaOFG75TRGqlxTKvTMlMqT3_tRR2cYs"
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
