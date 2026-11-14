@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         },
         ...NewsData.map((news) => ({
             url: `${SITE_URL}/news/${news.id}/`,
-            lastModified: new Date(news.revisedAt),
+            lastModified: new Date(news.revisedAt)
         })),
 
         {
@@ -26,7 +26,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
         ...WorkData.map((work) => ({
             url: `${SITE_URL}/works/${work.id}/`,
-            lastModified: new Date(work.revisedAt),
+            lastModified: new Date(work.revisedAt)
         })),
+
+        {
+            url: `${SITE_URL}/contact/`
+        },
+        {
+            url: `${SITE_URL}/terms-and-privacy/`,
+        }
     ];
 }
