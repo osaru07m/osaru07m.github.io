@@ -6,7 +6,7 @@ export default function FooterComponent() {
         <footer className={styles.footer}>
             <div className={styles.footer__links}>
                 <a href="/terms-and-privacy/" className={styles.footer__links__item}>利用規約とプライバシー</a>
-
+                <a href="/contact/" className={styles.footer__links__item}>お問い合わせ</a>
             </div>
             <p className={styles.footer__copy}>&copy; {(new Date()).getFullYear()} {Config.site.title}.</p>
         </footer>

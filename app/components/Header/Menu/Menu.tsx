@@ -18,6 +18,7 @@ export default function Menu() {
                     <li><Link href="/" onClick={() => setIsOpen(false)}>ホーム</Link></li>
                     <li><Link href="/news/" onClick={() => setIsOpen(false)}>おしらせ</Link></li>
                     <li><Link href="/works/" onClick={() => setIsOpen(false)}>制作実績</Link></li>
+                    <li><Link href="/contact/" onClick={() => setIsOpen(false)}>お問い合わせ</Link></li>
                 </ul>
 
                 <ul className={styles.header__menuLinks}>

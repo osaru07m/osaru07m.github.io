@@ -15,6 +15,14 @@ const Config = {
         github: "https://github.com/osaru07m/",
         wantedly: "https://www.wantedly.com/id/osaru07m/",
         x_twitter: "https://x.com/osaru07m/"
+    },
+    contact: {
+        hyperform_api: "https://hyperform.jp/api/3jx05Uoc",
+        category: [
+            "依頼相談",
+            "見積依頼",
+            "その他"
+        ]
     }
 }
 
