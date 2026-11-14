@@ -38,7 +38,7 @@ export default function Home() {
 
                         {NewsData.length > 6 && (
                             <div className={styles.btn_container}>
-                                <Link href="/news/" className="btn-primary_outline">もっとみる</Link>
+                                <Link href="/news/" className="btn_primary_outline">もっとみる</Link>
                             </div>
                         )}
                     </div>
@@ -52,7 +52,7 @@ export default function Home() {
 
                         {WorkData.length > 6 && (
                             <div className={styles.btn_container}>
-                                <Link href="/works/" className="btn-primary_outline">もっとみる</Link>
+                                <Link href="/works/" className="btn_primary_outline">もっとみる</Link>
                             </div>
                         )}
                     </div>

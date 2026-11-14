@@ -2,8 +2,8 @@
 @use "./variables" as *;
 @use "./mixins";
 
-@use "./buttons";
-@use "./form";
+@import "./buttons";
+@import "./form";
 
 // Default style
 *,

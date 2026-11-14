@@ -35,10 +35,10 @@
     }
 }
 
-.btn-primary {
+.btn_primary {
     @include button($color-primary, $color-white);
 }
 
-.btn-primary_outline {
+.btn_primary_outline {
     @include button_outline($color-primary);
 }
