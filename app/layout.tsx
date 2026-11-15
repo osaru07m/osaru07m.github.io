@@ -12,6 +12,8 @@ const lineSeedJp = LINE_Seed_JP({
 });
 
 export const metadata: Metadata = {
+  // 相対パスで指定したOGP画像などのURLを、このURLを基準に絶対URLへ解決する
+  metadataBase: new URL(Config.site.url),
   title: {
     default: Config.site.title,
     template: `%s | ${Config.site.title}`
