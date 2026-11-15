@@ -11,6 +11,9 @@ import { homeJsonLd } from "@/libs/json-ld/home";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
+    alternates: {
+        canonical: "/"
+    },
     openGraph: {
         type: "website",
         siteName: Config.site.title,

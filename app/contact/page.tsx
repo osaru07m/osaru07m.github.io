@@ -5,6 +5,9 @@ import { RequiredBadge } from "../components/Form/Badge/Badge";
 
 export const metadata: Metadata = {
     title: "お問い合わせ",
+    alternates: {
+        canonical: "/contact/"
+    },
     openGraph: {
         type: "article",
         title: "お問い合わせ",
