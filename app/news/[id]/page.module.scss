@@ -45,10 +45,16 @@
     }
 
     &__content {
-        > * {
+        * {
             line-height: calc($font-size * 1.5);
             margin: 0;
             margin-bottom: 1rem;
+        }
+
+        img {
+            display: block;
+            width: 80%;
+            height: auto;
         }
     }
 
