@@ -10,6 +10,9 @@ import Config from "@/config";
 
 export const metadata: Metadata = {
     title: "制作実績",
+    alternates: {
+        canonical: "/works/"
+    },
     openGraph: {
         type: "article",
         title: "制作実績",

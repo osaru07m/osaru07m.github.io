@@ -4,6 +4,9 @@ import Config from "@/config";
 
 export const metadata: Metadata = {
     title: "利用規約とプライバシー",
+    alternates: {
+        canonical: "/terms-and-privacy/"
+    },
     openGraph: {
         type: "article",
         title: "利用規約とプライバシー",
